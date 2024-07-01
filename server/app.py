@@ -23,12 +23,17 @@ def count(number):
     
 app.route('/math/<it:num1>/<string:operation>/<int:num2>')
 def math (num1,num2,operation):
+
     if operation == '+':
-        return str(num1+num2)   
+        return str(num1+num2) 
+
     elif operation == '-':
         return str(num1-num2) 
+    
     elif operation == '*':
         return str(num1*num2) 
+    
+
     elif operation == '/':
         return str(num1/num2) 
     elif operation == '%':
